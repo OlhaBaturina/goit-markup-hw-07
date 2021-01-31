@@ -1,0 +1,78 @@
+.service-box {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: $main-color;
+}
+.service-link {
+  position: relative;
+  display: block;
+  width: 370px;
+  height: 300px;
+  padding: 0;
+  margin: 0;
+}
+
+.service-modal {
+  position: absolute;
+  display: block;
+  left: 0px;
+  bottom: 0px;
+
+  width: 100%;
+  height: 70px;
+  margin: 0;
+
+  background: rgba(47, 48, 58, 0.8);
+  font-weight: bold;
+
+  line-height: 1.14;
+  text-align: center;
+
+  text-transform: uppercase;
+  padding: 27px 0px;
+  color: #ffffff;
+}
+/* О компании */
+
+.advantage-title {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $heading-color;
+  margin-bottom: 10px;
+}
+
+.advantage-text {
+  line-height: 1.71;
+  color: $main-text-color;
+}
+
+.company-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.block-company {
+  display: inline-block;
+  width: 270px;
+}
+
+.block-company:not(:last-child) {
+  margin-right: 30px;
+}
+
+.section-service {
+  display: flex;
+  margin-top: 50px;
+}
+
+.service-list {
+  display: block;
+  width: 370px;
+  height: 294px;
+}
+
+.service-list:not(:last-child) {
+  margin-right: 30px;
+}

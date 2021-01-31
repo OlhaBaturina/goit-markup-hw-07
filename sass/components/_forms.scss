@@ -1,0 +1,132 @@
+/* Форма заполнения */
+
+.form-input {
+  position: relative;
+  width: 450px;
+  height: 40px;
+
+  padding-left: 42px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.feedback {
+  display: block;
+  margin-bottom: 20px;
+}
+
+textarea.form-input {
+  height: 120px;
+  resize: none;
+  padding: 12px 16px;
+}
+
+.form-input::placeholder {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: $accent-color;
+}
+
+.form-input:focus ~ .form-icon {
+  fill: $accent-color;
+}
+
+.contact-form h2 {
+  margin-bottom: 12px;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+}
+
+.form-text {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: #757575;
+  text-align: left;
+}
+
+.agreement {
+  position: relative;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.agreement-check {
+  display: block;
+  width: 15px;
+  height: 15px;
+}
+
+.agreement-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.agreement-text a {
+  text-decoration: underline;
+  color: $accent-color;
+}
+
+.submit-form {
+  width: 200px;
+  height: 50px;
+  background: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
+
+.submit-form:hover,
+.submit-form:focus {
+  background: #188ce8;
+}
+
+.form-label {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.form-icon {
+  position: absolute;
+  bottom: 14px;
+  left: 14px;
+  /* transform: translateY(50%); */
+}
+
+.icon-not-check,
+.agreement-check:checked ~ .icon-check {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  display: block;
+}
+
+.icon-check,
+.agreement-check:checked ~ .icon-not-check {
+  display: none;
+}
