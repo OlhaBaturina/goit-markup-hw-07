@@ -85,27 +85,6 @@ textarea.form-input {
   color: $accent-color;
 }
 
-.submit-form {
-  width: 200px;
-  height: 50px;
-  background: $accent-color;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-
-  font-size: 16px;
-  line-height: 1.87;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: #ffffff;
-}
-
-.submit-form:hover,
-.submit-form:focus {
-  background: #188ce8;
-}
-
 .form-label {
   position: relative;
   margin-bottom: 10px;

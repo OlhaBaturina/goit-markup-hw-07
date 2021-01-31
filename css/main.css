@@ -590,58 +590,40 @@ header {
   margin-bottom: 30px;
 }
 
-.hero-box .button {
-  background-color: #2196f3;
-  font-weight: 700;
+.hero-box .button, .filter, .mail-send, .submit-form {
+  display: inline-block;
+  font-family: inherit;
   font-size: 16px;
   line-height: 1.87;
   text-align: center;
-  color: inherit;
-  /* Стили кнопки */
-  display: inline-block;
+  color: #ffffff;
+  background-color: #2196f3;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.hero-box .button {
   position: inherit;
+  font-weight: 700;
   width: 200px;
   height: 50px;
-  border: none;
-  border-radius: 4px;
   padding: 10px;
-  cursor: pointer;
 }
 
-/* Кнопки*/
-.button-filter {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.filter.cursor {
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  color: #212121;
-  background-color: #f5f4fa;
-  /* Позиционирование кнопок */
-  display: inline-block;
+/* Кнопки фильтра в портфолио*/
+.filter {
   height: 38px;
-  padding-top: 6px;
-  padding-left: 22px;
-  padding-bottom: 6px;
-  padding-right: 22px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+  padding: 6px 22px;
   margin-right: 8px;
   margin-bottom: 56px;
+  font-weight: 500;
+  line-height: 1.62;
+  color: #212121;
+  background-color: #f5f4fa;
 }
 
-.filter:hover,
-.filter:focus {
+.filter:hover, .filter:focus {
   background-color: #2196f3;
   color: #ffffff;
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -650,6 +632,37 @@ header {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mail-send {
+  position: relative;
+  width: 200px;
+  height: 50px;
+  padding-left: 30px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  text-align: left;
+  font-weight: bold;
+}
+
+.mail-send .mail-icon {
+  position: absolute;
+  top: 13px;
+  right: 28px;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+}
+
+.submit-form {
+  width: 200px;
+  height: 50px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.submit-form:hover, .submit-form:focus {
+  background: #188ce8;
 }
 
 .backdrop {
@@ -817,27 +830,6 @@ textarea.form-input {
 .agreement-text a {
   text-decoration: underline;
   color: #2196f3;
-}
-
-.submit-form {
-  width: 200px;
-  height: 50px;
-  background: #2196f3;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-  line-height: 1.87;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: #ffffff;
-}
-
-.submit-form:hover,
-.submit-form:focus {
-  background: #188ce8;
 }
 
 .form-label {
@@ -1216,38 +1208,19 @@ footer h2 {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.mail-send {
-  position: relative;
-  display: inline-block;
-  width: 200px;
-  height: 50px;
-  padding-left: 30px;
-  background: #2196f3;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  color: #ffffff;
-  text-align: left;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.87;
-}
-
-.mail-icon {
-  position: absolute;
-  top: 13px;
-  right: 28px;
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-}
-
 .section-product {
   background: #ffffff;
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.section-product .button-filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .section-product .portfolio-box {

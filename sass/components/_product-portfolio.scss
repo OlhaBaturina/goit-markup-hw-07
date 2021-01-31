@@ -2,6 +2,10 @@
   background: $main-color;
   padding-top: 94px;
   padding-bottom: 94px;
+  .button-filter {
+    display: flex;
+    justify-content: center;
+  }
   .portfolio-box {
     display: flex;
     flex-wrap: wrap;

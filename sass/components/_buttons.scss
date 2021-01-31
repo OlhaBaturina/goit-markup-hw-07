@@ -1,61 +1,80 @@
-// Конопка открытия модалки
-.hero-box .button {
-  background-color: $accent-color;
-  font-weight: 700;
+%button {
+  display: inline-block;
+  font-family: inherit;
   font-size: 16px;
   line-height: 1.87;
   text-align: center;
-  color: inherit;
-
-  /* Стили кнопки */
-
-  display: inline-block;
-  position: inherit;
-  width: 200px;
-  height: 50px;
+  color: $main-color;
+  background-color: $accent-color;
   border: none;
   border-radius: 4px;
-  padding: 10px;
   cursor: pointer;
 }
 
-/* Кнопки*/
-
-.button-filter {
-  display: flex;
-  justify-content: center;
+// Конопка открытия модалкив Герое
+.hero-box .button {
+  @extend %button;
+  position: inherit;
+  font-weight: 700;
+  width: 200px;
+  height: 50px;
+  padding: 10px;
 }
 
-.filter.cursor {
-  font-family: inherit;
+/* Кнопки фильтра в портфолио*/
+
+.filter {
+  @extend %button;
+  height: 38px;
+  padding: 6px 22px;
+  margin-right: 8px;
+  margin-bottom: 56px;
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.62;
-  text-align: center;
   color: $heading-color;
   background-color: $command-background-color;
 
-  /* Позиционирование кнопок */
-
-  display: inline-block;
-  height: 38px;
-  padding-top: 6px;
-  padding-left: 22px;
-  padding-bottom: 6px;
-  padding-right: 22px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-right: 8px;
-  margin-bottom: 56px;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $main-color;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    transition-duration: $duration;
+    transition-timing-function: $timing-function;
+  }
 }
 
-.filter:hover,
-.filter:focus {
-  background-color: $accent-color;
-  color: $main-color;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  transition-duration: $duration;
-  transition-timing-function: $timing-function;
+// Кнопка "Отправить" в футере
+
+.mail-send {
+  @extend %button;
+  position: relative;
+  width: 200px;
+  height: 50px;
+  padding-left: 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  text-align: left;
+  font-weight: bold;
+  .mail-icon {
+    position: absolute;
+    top: 13px;
+    right: 28px;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+  }
+}
+
+// Кнопка отправит форму
+
+.submit-form {
+  @extend %button;
+  width: 200px;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  &:hover,
+  &:focus {
+    background: #188ce8;
+  }
 }
