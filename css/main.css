@@ -736,7 +736,7 @@ header {
 }
 
 /* Форма заполнения */
-.form-input {
+.contact-form .form-input {
   position: relative;
   width: 450px;
   height: 40px;
@@ -747,53 +747,53 @@ header {
   border-radius: 4px;
 }
 
+.contact-form .form-input::-webkit-input-placeholder {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.contact-form .form-input:-ms-input-placeholder {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.contact-form .form-input::-ms-input-placeholder {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.contact-form .form-input::placeholder {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.contact-form .form-input:focus ~ .form-icon {
+  fill: #2196f3;
+}
+
 .feedback {
   display: block;
   margin-bottom: 20px;
 }
 
-textarea.form-input {
+.feedback .form-input {
   height: 120px;
   resize: none;
   padding: 12px 16px;
-}
-
-.form-input::-webkit-input-placeholder {
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
-
-.form-input:-ms-input-placeholder {
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
-
-.form-input::-ms-input-placeholder {
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
-
-.form-input::placeholder {
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: none;
   border-color: #2196f3;
-}
-
-.form-input:focus ~ .form-icon {
-  fill: #2196f3;
 }
 
 .contact-form h2 {
