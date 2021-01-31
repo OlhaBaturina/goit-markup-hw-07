@@ -858,12 +858,12 @@ textarea.form-input {
 }
 
 /* Блок преимущества и услуги */
-.section-company {
+.company {
   padding-top: 94px;
   background-color: #ffffff;
 }
 
-.icon-box {
+.company-icon-box {
   display: block;
   width: 270px;
   height: 120px;
@@ -874,6 +874,23 @@ textarea.form-input {
 
 .company-icon {
   background-position: center;
+}
+
+.company-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.company-block {
+  display: inline-block;
+  width: 270px;
+}
+
+.company-block:not(:last-child) {
+  margin-right: 30px;
 }
 
 .service-box {
@@ -920,23 +937,6 @@ textarea.form-input {
 .advantage-text {
   line-height: 1.71;
   color: #757575;
-}
-
-.company-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 0;
-  margin: 0;
-}
-
-.block-company {
-  display: inline-block;
-  width: 270px;
-}
-
-.block-company:not(:last-child) {
-  margin-right: 30px;
 }
 
 .section-service {
