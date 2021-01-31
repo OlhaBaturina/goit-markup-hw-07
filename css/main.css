@@ -562,6 +562,13 @@ header {
   color: #2196f3;
 }
 
+.footer .logo {
+  color: #ffffff;
+  display: block;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
 /* Герой */
 .hero-box {
   overflow: hidden;
@@ -857,6 +864,40 @@ textarea.form-input {
   display: none;
 }
 
+.mail-form {
+  display: block;
+  margin-top: 12px;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+/* .mail-form > h2 {
+  margin: 0;
+} */
+.mail-label {
+  display: inline-block;
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+}
+
+.mail-input {
+  display: inline-block;
+  width: inherit;
+  height: inherit;
+  padding-left: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  background: #2f303a;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+}
+
 /* Блок преимущества и услуги */
 .company {
   padding-top: 94px;
@@ -1068,45 +1109,12 @@ textarea.form-input {
           justify-content: flex-start;
 }
 
-.footer-box {
-  display: inline-block;
-  margin-right: 70px;
-  line-height: 1.71;
-  font-style: normal;
-}
-
-.footer-box .logo {
-  color: #ffffff;
-  display: block;
-  margin: 0;
-  padding-bottom: 20px;
-}
-
-.footer-address {
-  color: #ffffff;
-}
-
-.footer-address:not(:last-child) {
-  padding-bottom: 9px;
-}
-
-.footer-contacts {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.footer-contacts.mail {
-  display: block;
-  padding-bottom: 9px;
-}
-
 .footer-social {
   display: inline-block;
   margin-top: 12px;
 }
 
-footer h2 {
-  font-style: normal;
-  font-weight: bold;
+.footer h2 {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -1115,38 +1123,27 @@ footer h2 {
   color: #ffffff;
 }
 
-.mail-form {
-  display: block;
-  margin-top: 12px;
-  margin-left: auto;
-  margin-right: 0;
+.footer-box {
+  margin-right: 70px;
+  line-height: 1.71;
+  font-style: normal;
 }
 
-/* .mail-form > h2 {
-  margin: 0;
-} */
-.mail-label {
-  display: inline-block;
-  width: 358px;
-  height: 50px;
-  margin-right: 12px;
+.footer-box .footer-address {
+  color: #ffffff;
 }
 
-.mail-input {
-  display: inline-block;
-  width: inherit;
-  height: inherit;
-  padding-left: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 4px;
-  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  background: #2f303a;
-  font-size: 16px;
-  line-height: 1.25;
+.footer-box .footer-address:not(:last-child) {
+  padding-bottom: 9px;
+}
+
+.footer-box .footer-contacts {
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-box .mail {
+  display: block;
+  padding-bottom: 9px;
 }
 
 .section-product {
