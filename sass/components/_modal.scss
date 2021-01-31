@@ -46,9 +46,8 @@
   height: 30px;
 
   background: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  box-sizing: border-box;
+  @include bordered(rgba(0, 0, 0, 0.1));
+  border-radius: 4px;
   cursor: pointer;
 }
 

@@ -81,11 +81,9 @@ footer h2 {
   width: inherit;
   height: inherit;
   padding-left: 16px;
-
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-sizing: border-box;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  @include bordered(rgba(255, 255, 255, 0.3));
   border-radius: 4px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   background: $darck-background-color;
   font-size: 16px;
   line-height: 1.25;
