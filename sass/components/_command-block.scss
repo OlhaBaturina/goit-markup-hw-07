@@ -39,37 +39,3 @@
 .command-people:not(:last-child) {
   margin-right: 30px;
 }
-
-.social {
-  display: inline-block;
-  border-radius: 50%;
-  margin-bottom: 30px;
-}
-
-.social:not(:last-child) {
-  margin-right: 10px;
-}
-
-.social-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 45px;
-  height: 45px;
-  fill: #afb1b8;
-  transition-property: background-color;
-}
-
-.social-link:hover,
-.social-link:focus {
-  background-color: $accent-color;
-  border-radius: 50%;
-  fill: $main-color;
-  transition-duration: $duration;
-  transition-timing-function: $timing-function;
-}
-
-.link-icon {
-  width: 20px;
-  height: 20px;
-}

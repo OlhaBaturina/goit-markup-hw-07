@@ -58,19 +58,6 @@ footer h2 {
   color: #ffffff;
 }
 
-.footer-social .social-link {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  fill: $main-color;
-}
-
-.footer-social .social-link:hover,
-.footer-social .social-link:focus-visible {
-  background: $accent-color;
-  transition-duration: $duration;
-  transition-timing-function: $timing-function;
-}
-
 .mail-form {
   display: block;
   margin-top: 12px;
