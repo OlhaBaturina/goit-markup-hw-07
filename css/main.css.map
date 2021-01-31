@@ -9,7 +9,7 @@
         "../sass/components/_page-header.scss",
         "../sass/components/_logo.scss",
         "../sass/components/_hero-box.scss",
-        "../sass/components/_button.scss",
+        "../sass/components/_buttons.scss",
         "../sass/components/_modal.scss",
         "../sass/components/_forms.scss",
         "../sass/components/_advantages.scss",
