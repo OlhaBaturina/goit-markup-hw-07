@@ -1,83 +1,6 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0 auto;
-  padding: 0;
-
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 0.03em;
-}
-
-:root {
-  --main-color: #ffffff;
-  --main-background-color: #e5e5e5;
-  --darck-background-color: #2f303a;
-  --command-background-color: #f5f4fa;
-  --heading-color: #212121;
-  --main-text-color: #757575;
-  --accent-color: #2196f3;
-  --duration: 250ms;
-  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/* Сбрасывает отступы */
-h1,
-h2,
-h3,
-h4,
-p,
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  font-family: inherit;
-  text-decoration: none;
-  font-style: normal;
-}
-
-address {
-  font-family: inherit;
-  font-style: normal;
-}
-
-li {
-  list-style: none;
-}
-
-/* Скрытые заголовки */
-
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
-
-/* Подзаголовки */
-
-h2 {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  color: var(--heading-color);
-}
-
-/* Общий контейнер */
-
-.container {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 15px;
-}
+@import 'base/normalize';
+@import "utils/variables";
+@import "base/typography";
 
 /* Списки в строку */
 
@@ -118,7 +41,7 @@ header {
 }
 
 .logo-web {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 /*Навигация */
@@ -128,12 +51,12 @@ header {
   display: block;
   padding: 32px 0px;
 
-  color: var(--heading-color);
+  color: $heading-color;
 
   line-height: 1.14;
   letter-spacing: 0.02em;
-  transition-duration: var(--duration);
-  transition-timing-function: var(--timing-function);
+  transition-duration: $duration;
+  transition-timing-function: $timing-function;
 }
 
 .nav::after {
@@ -144,17 +67,17 @@ header {
 
   width: 100%;
   height: 4px;
-  background: var(--accent-color);
+  background: $accent-color;
   border-radius: 2px;
   opacity: 0;
-  transition-duration: var(--duration);
-  transition-timing-function: var(--timing-function);
+  transition-duration: $duration;
+  transition-timing-function: $timing-function;
 }
 
 .nav:hover,
 .nav:focus,
 .current {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .current::after {
@@ -205,16 +128,16 @@ header {
 
 .address:hover,
 .address:focus {
-  color: var(--accent-color);
-  transition-duration: var(--duration);
-  transition-timing-function: var(--timing-function);
+  color: $accent-color;
+  transition-duration: $duration;
+  transition-timing-function: $timing-function;
 }
 
 .address {
   display: block;
   padding: 32px 0px;
   letter-spacing: 0.02em;
-  color: var(--main-text-color);
+  color: $main-text-color;
 }
 
 /* Страница 1 - Index.html */
@@ -241,7 +164,7 @@ header {
   margin-left: auto;
   margin-right: auto;
 
-  color: var(--main-color);
+  color: $main-color;
   text-align: center;
   letter-spacing: 0.06em;
 }
@@ -255,7 +178,7 @@ header {
 }
 
 .hero-box .button {
-  background-color: var(--accent-color);
+  background-color: $accent-color;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -287,8 +210,8 @@ header {
   background: rgba(0, 0, 0, 0.2);
 
   transform: scale(1);
-  transition-duration: var(--duration);
-  transition-timing-function: var(--timing-function);
+  transition-duration: $duration;
+  transition-timing-function: $timing-function;
 }
 
 .backdrop.is-hidden {
@@ -334,7 +257,7 @@ header {
 
 .modal-close:hover > .icon-close,
 .modal-close:focus > .icon-close {
-  fill: var(--accent-color);
+  fill: $accent-color;
 }
 /* Форма заполнения */
 
@@ -372,11 +295,11 @@ textarea.form-input {
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: none;
-  border-color: var(--accent-color);
+  border-color: $accent-color;
 }
 
 .form-input:focus ~ .form-icon {
-  fill: var(--accent-color);
+  fill: $accent-color;
 }
 
 .contact-form h2 {
@@ -420,13 +343,13 @@ textarea.form-input {
 
 .agreement-text a {
   text-decoration: underline;
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .submit-form {
   width: 200px;
   height: 50px;
-  background: var(--accent-color);
+  background: $accent-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
   border-radius: 4px;
@@ -473,7 +396,7 @@ textarea.form-input {
 
 .section-company {
   padding-top: 94px;
-  background-color: var(--main-color);
+  background-color: $main-color;
 }
 
 .icon-box {
@@ -492,7 +415,7 @@ textarea.form-input {
 .service-box {
   padding-top: 94px;
   padding-bottom: 94px;
-  background-color: var(--main-color);
+  background-color: $main-color;
 }
 .service-link {
   position: relative;
@@ -529,13 +452,13 @@ textarea.form-input {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
-  color: var(--heading-color);
+  color: $heading-color;
   margin-bottom: 10px;
 }
 
 .advantage-text {
   line-height: 1.71;
-  color: var(--main-text-color);
+  color: $main-text-color;
 }
 
 /* Позиционирование */
@@ -584,19 +507,19 @@ textarea.form-input {
 }
 
 .command-name {
-  color: var(--heading-color);
+  color: $heading-color;
   display: inline-block;
   padding-top: 30px;
   padding-bottom: 10px;
 }
 
 .command-position {
-  color: var(--main-text-color);
+  color: $main-text-color;
   margin-bottom: 16px;
 }
 
 .command-section {
-  background-color: var(--command-background-color);
+  background-color: $command-background-color;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -604,7 +527,7 @@ textarea.form-input {
 .command-people {
   display: block;
   width: 270px;
-  background-color: var(--main-color);
+  background-color: $main-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -636,11 +559,11 @@ textarea.form-input {
 
 .social-link:hover,
 .social-link:focus {
-  background-color: var(--accent-color);
+  background-color: $accent-color;
   border-radius: 50%;
-  fill: var(--main-color);
-  transition-duration: var(--duration);
-  transition-timing-function: var(--timing-function);
+  fill: $main-color;
+  transition-duration: $duration;
+  transition-timing-function: $timing-function;
 }
 
 .link-icon {
@@ -685,16 +608,16 @@ textarea.form-input {
 .client-link:hover,
 .client-link:focus {
   border-radius: 4px;
-  fill: var(--accent-color);
-  border-color: var(--accent-color);
-  transition-duration: var(--duration);
-  transition-timing-function: var(--timing-function);
+  fill: $accent-color;
+  border-color: $accent-color;
+  transition-duration: $duration;
+  transition-timing-function: $timing-function;
 }
 
 /* Подвал */
 
 .footer {
-  background-color: var(--darck-background-color);
+  background-color: $darck-background-color;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -712,14 +635,14 @@ textarea.form-input {
 }
 
 .footer-box .logo {
-  color: var(--main-color);
+  color: $main-color;
   display: block;
   margin: 0;
   padding-bottom: 20px;
 }
 
 .footer-address {
-  color: var(--main-color);
+  color: $main-color;
 }
 
 .footer-address:not(:last-child) {
@@ -754,14 +677,14 @@ footer h2 {
 .footer-social .social-link {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  fill: var(--main-color);
+  fill: $main-color;
 }
 
 .footer-social .social-link:hover,
 .footer-social .social-link:focus-visible {
-  background: var(--accent-color);
-  transition-duration: var(--duration);
-  transition-timing-function: var(--timing-function);
+  background: $accent-color;
+  transition-duration: $duration;
+  transition-timing-function: $timing-function;
 }
 
 .mail-form {
@@ -792,7 +715,7 @@ footer h2 {
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  background: var(--darck-background-color);
+  background: $darck-background-color;
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
@@ -805,7 +728,7 @@ footer h2 {
   height: 50px;
   padding-left: 30px;
 
-  background: var(--accent-color);
+  background: $accent-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
   border-radius: 4px;
@@ -829,7 +752,7 @@ footer h2 {
 /* Страница 2 - Portfolio.html */
 
 .section-product {
-  background: var(--main-color);
+  background: $main-color;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -847,8 +770,8 @@ footer h2 {
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
-  color: var(--heading-color);
-  background-color: var(--command-background-color);
+  color: $heading-color;
+  background-color: $command-background-color;
 
   /* Позиционирование кнопок */
 
@@ -867,12 +790,12 @@ footer h2 {
 
 .filter:hover,
 .filter:focus {
-  background-color: var(--accent-color);
-  color: var(--main-color);
+  background-color: $accent-color;
+  color: $main-color;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  transition-duration: var(--duration);
-  transition-timing-function: var(--timing-function);
+  transition-duration: $duration;
+  transition-timing-function: $timing-function;
 }
 
 /* Портфолио проектов_Общий класс-product */
@@ -886,13 +809,13 @@ footer h2 {
 .product {
   /* position: relative; */
   display: inline-block;
-  background: var(--main-color);
+  background: $main-color;
   border: 1px solid #eeeeee;
   box-sizing: border-box;
   width: 370px;
   height: 404px;
-  transition-duration: var(--duration);
-  transition-timing-function: var(--timing-function);
+  transition-duration: $duration;
+  transition-timing-function: $timing-function;
 }
 
 .product:hover,
@@ -925,8 +848,8 @@ footer h2 {
 
   opacity: 0;
 
-  transition-duration: var(--duration);
-  transition-timing-function: var(--timing-function);
+  transition-duration: $duration;
+  transition-timing-function: $timing-function;
 }
 
 .product:hover .product-overley,
@@ -956,7 +879,7 @@ footer h2 {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--heading-color);
+  color: $heading-color;
 
   padding-bottom: 4px;
 }
@@ -965,7 +888,7 @@ footer h2 {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.87;
-  color: var(--main-text-color);
+  color: $main-text-color;
 
   padding-top: 0;
   padding-bottom: 0;
