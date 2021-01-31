@@ -47,12 +47,10 @@
 
   background: #ffffff;
   @include bordered(rgba(0, 0, 0, 0.1));
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.modal-close .icon-close {
-  fill: #000000;
+  border-radius: 50%;
+  .icon-close {
+    fill: #000000;
+  }
 }
 
 .modal-close:hover > .icon-close,
