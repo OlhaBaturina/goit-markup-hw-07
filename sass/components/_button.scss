@@ -18,3 +18,44 @@
   padding: 10px;
   cursor: pointer;
 }
+
+/* Кнопки*/
+
+.button-filter {
+  display: flex;
+  justify-content: center;
+}
+
+.filter.cursor {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  color: $heading-color;
+  background-color: $command-background-color;
+
+  /* Позиционирование кнопок */
+
+  display: inline-block;
+  height: 38px;
+  padding-top: 6px;
+  padding-left: 22px;
+  padding-bottom: 6px;
+  padding-right: 22px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 8px;
+  margin-bottom: 56px;
+}
+
+.filter:hover,
+.filter:focus {
+  background-color: $accent-color;
+  color: $main-color;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition-duration: $duration;
+  transition-timing-function: $timing-function;
+}
