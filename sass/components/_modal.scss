@@ -51,9 +51,8 @@
   .icon-close {
     fill: #000000;
   }
+  &:hover > .icon-close,
+  &:focus > .icon-close {
+   fill: $accent-color;
 }
-
-.modal-close:hover > .icon-close,
-.modal-close:focus > .icon-close {
-  fill: $accent-color;
 }
