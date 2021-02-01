@@ -31,4 +31,17 @@
   &-block:not(:last-child) {
     margin-right: 30px;
   }
+
+  &-title {
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $heading-color;
+    margin-bottom: 10px;
+  }
+
+  .company-text {
+    line-height: 1.71;
+    color: $main-text-color;
+  }
 }
