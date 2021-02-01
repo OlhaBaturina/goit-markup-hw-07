@@ -408,16 +408,15 @@ h2 {
   padding: 0 15px;
 }
 
-header > li {
-  display: inline;
-}
-
-/* контейнер верхней панели */
 header {
   border-bottom: 1px solid #ececec;
 }
 
-.header-container {
+header li {
+  display: inline;
+}
+
+header .header-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -437,7 +436,15 @@ header {
   padding: 25px 0px;
 }
 
-/*Навигация */
+.nav-conteiner .current::after {
+  opacity: 1;
+}
+
+.nav-conteiner .nav:hover::after,
+.nav-conteiner .nav:focus::after {
+  opacity: 1;
+}
+
 .nav {
   position: relative;
   display: block;
@@ -467,19 +474,9 @@ header {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav:hover,
-.nav:focus,
-.current {
+.nav:hover, .nav:focus,
+.nav .current {
   color: #2196f3;
-}
-
-.current::after {
-  opacity: 1;
-}
-
-.nav:hover::after,
-.nav:focus::after {
-  opacity: 1;
 }
 
 .link-list {
@@ -493,13 +490,13 @@ header {
           align-items: center;
 }
 
-.nav-link {
+.link-list .nav-link {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
-.nav-link:not(:last-child) {
+.link-list .nav-link:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -525,18 +522,9 @@ header {
   margin-right: 50px;
 }
 
-.contact-icon {
+.address-link .contact-icon {
   fill: currentColor;
   margin-right: 10px;
-}
-
-.address:hover,
-.address:focus {
-  color: #2196f3;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address {
@@ -544,6 +532,14 @@ header {
   padding: 32px 0px;
   letter-spacing: 0.02em;
   color: #757575;
+}
+
+.address:hover, .address:focus {
+  color: #2196f3;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* логотип */
