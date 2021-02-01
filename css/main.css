@@ -432,6 +432,11 @@ header {
   display: flex;
 }
 
+.nav-conteiner .logo {
+  display: block;
+  padding: 25px 0px;
+}
+
 /*Навигация */
 .nav {
   position: relative;
@@ -542,11 +547,6 @@ header {
 }
 
 /* логотип */
-.nav-conteiner .logo {
-  display: block;
-  padding: 25px 0px;
-}
-
 .logo {
   margin-top: 0px;
   margin-right: 93px;
@@ -589,7 +589,7 @@ header {
   letter-spacing: 0.06em;
 }
 
-.hero {
+.hero-box .hero {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;

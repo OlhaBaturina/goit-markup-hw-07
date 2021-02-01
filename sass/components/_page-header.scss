@@ -15,6 +15,10 @@ header {
 
 .nav-conteiner {
   display: flex;
+  .logo {
+    display: block;
+    padding: 25px 0px;
+  }
 }
 
 /*Навигация */

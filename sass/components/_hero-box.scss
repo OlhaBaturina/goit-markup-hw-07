@@ -23,12 +23,12 @@
   color: $main-color;
   text-align: center;
   letter-spacing: 0.06em;
-}
 
-.hero {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-transform: uppercase;
-  margin-bottom: 30px;
+  .hero {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
 }
