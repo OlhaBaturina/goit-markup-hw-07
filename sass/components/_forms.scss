@@ -1,24 +1,25 @@
-/* Форма в модальном окне */
+// Форма в модальном окне
 
 .contact-form {
   input:focus,
   textarea:focus {
     outline: none;
     border-color: $accent-color;
-  h2 {
+  }
+  .modal-title {
     margin-bottom: 12px;
     font-size: 20px;
     line-height: 23px;
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
-}
   }
+}
 
 .form-label {
-    position: relative;
-    margin-bottom: 10px;
-    .form-text {
+  position: relative;
+  margin-bottom: 10px;
+  .form-text {
     display: block;
     margin-bottom: 4px;
     font-size: 12px;
@@ -31,7 +32,7 @@
     position: absolute;
     bottom: 14px;
     left: 14px;
-}
+  }
 }
 
 .form-input {
@@ -102,18 +103,18 @@
   margin-left: auto;
   margin-right: 0;
   .mail-label {
-      display: block;
-      width: 358px;
-      height: 50px;
-      margin-right: 12px;
+    display: block;
+    width: 358px;
+    height: 50px;
+    margin-right: 12px;
   }
   .mail-input {
-      @include bordered(rgba(255, 255, 255, 0.3));
-      border-radius: 50%;
-      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-      background: $darck-background-color;
-      font-size: 16px;
-      line-height: 1.25;
-      color: rgba(255, 255, 255, 0.6);
-}
+    @include bordered(rgba(255, 255, 255, 0.3));
+    border-radius: 50%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    background: $darck-background-color;
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
